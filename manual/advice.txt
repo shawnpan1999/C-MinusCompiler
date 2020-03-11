@@ -1,0 +1,9 @@
+Advice
+It is next to impossible to debug your parser by entering grammar rules for the whole language
+and then starting to test it. Instead, you should adopt an incremental approach. Enter the
+rules for a few grammar productions at a time and test them. When you are convinced that
+they work, add some more productions an repeat the testing process.
+From a practical perspective, it makes sense to begin with the productions for the ex-
+pression grammar. Once your parser is handling expressions correctly, add assignment, then
+statement lists. You can then expand to the control-flow and I/O statements, declarations,
+and, eventually, the entire langauge.
